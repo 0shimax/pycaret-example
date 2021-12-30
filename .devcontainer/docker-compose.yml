@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  pycaret-example:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: sleep infinity
+    ports:
+      - 8888:8888
+    volumes:
+      - ~/dev/pycaret-example:/pycaret-example
+      - ~/data:/data
